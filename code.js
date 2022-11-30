@@ -4,8 +4,8 @@ let N=13;
 for(let i=1;i<N;i++){
 	if(N%i==0){
 	count++;		
-}if(count>0){
-	console.log(count)
+}if(count==2){
+	console.log("yes")
 }else{
 	console.log("no")	
 }
@@ -13,7 +13,7 @@ for(let i=1;i<N;i++){
 //Palindrome problem 
 let str="aba"
 let bag=""
-for(let i=0;i<str.length;i++){
+for(let i=str.length;i>=0;i--){
 	bag=bag+str[i]
 }if(str==bag){
 	console.log("Yes")
